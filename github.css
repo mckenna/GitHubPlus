@@ -1,3 +1,7 @@
+.dynamically-inserted .minibutton .octicon {
+  margin-right: 0;
+}
+
 .wrapper .container {
   width: auto;
   box-sizing: border-box;
