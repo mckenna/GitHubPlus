@@ -1,0 +1,35 @@
+.page-pullrequest .wrapper .container {
+  width: auto;
+  box-sizing: border-box;
+}
+
+.page-pullrequest .wrapper .container .repository-sidebar {
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.page-pullrequest .wrapper .container .repository-content {
+  width: auto;
+  float: none;
+  margin-right: 50px;
+}
+
+.page-pullrequest .wrapper .container .repo-container.with-full-navigation .repository-content {
+  margin-right: 185px;
+}
+
+.page-pullrequest .wrapper .container #discussion_bucket .discussion-timeline {
+  width: auto;
+  margin-right: 105px;
+}
+
+@media screen and (max-width: 1094px) {
+  .page-pullrequest .wrapper .container .repository-sidebar {
+    display: none;
+  }
+
+  .page-pullrequest .wrapper .container .repository-content {
+    margin-right: 0;
+  }
+}

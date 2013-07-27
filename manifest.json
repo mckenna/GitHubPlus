@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub+",
+  "version": "0.1",
+  "description": "Make GitHub a bit better to use",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
+  },
+  "homepage_url": "https://github.com/mckenna/GitHubPlus",
+  "permissions": [
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches":  ["https://github.com/*", "https://www.github.com/*"],
+      "run_at":   "document_start",
+      "css":      ["github.css"],
+      "js":       ["jquery.min.js", "githubplus.js"]
+    }
+  ]
+}
