@@ -29,6 +29,16 @@
   margin-right: 105px;
 }
 
+.wrapper .container .columns.profilecols .last {
+  float: none;
+  width: auto;
+  margin-left: 235px;
+}
+
+.wrapper .container .columns.profilecols .last .activity-tab div.clearfix {
+  display: none;
+}
+
 @media screen and (max-width: 1094px) {
   .wrapper .container .repository-sidebar {
     display: none;
