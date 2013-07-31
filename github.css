@@ -39,6 +39,19 @@
   display: none;
 }
 
+.wrapper .container .columns.profilecols .last .box-small .box-header {
+  height: 36px;
+}
+
+.inline-comment-form,
+.comment-holder {
+  max-width: 100% !important;
+}
+
+#files {
+  padding-left: 21px;
+}
+
 @media screen and (max-width: 1094px) {
   .wrapper .container .repository-sidebar {
     display: none;
