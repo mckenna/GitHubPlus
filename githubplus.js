@@ -1,6 +1,21 @@
 $(function() {
-  if ( $('.issues-list-options').length > 0 ) {
-    add_extra_issue_list_controls();
+  add_extra_issue_list_controls();
+
+  var add_extra_issue_list_controls = function() {
+    var issueCheck;
+    if($('.issues-list-options').length > 0) {
+      issueCheck = window.setInterval(
+        function() {
+          if( $('.dynamically-inserted').length === 0){
+            $('.issues-list-options').append(button_template);
+          }
+        },
+        500
+      );
+    }
+    else {
+      window.clearInterval(issueCheck);
+    }
   }
 
   $(document).on(
@@ -31,23 +46,6 @@ $(function() {
       }
     }
   );
+
+  var button_template = '<div class="button-group dynamically-inserted"><a href="#" class="minibutton selected" data-show="all">All</a><a href="#" class="minibutton" data-show="issues"><span class="type-icon octicon octicon-issue-opened"></span></a><a href="#" class="minibutton" data-show="prs"><span class="type-icon octicon octicon-git-pull-request"></span></a></div>';
 });
-
-var add_extra_issue_list_controls = function() {
-  var issueCheck;
-  if($('.issues-list-options').length > 0) {
-    issueCheck = window.setInterval(
-      function() {
-        if( $('.dynamically-inserted').length === 0){
-          $('.issues-list-options').append(button_template);
-        }
-      },
-      500
-    );
-  }
-  else {
-    window.clearInterval(issueCheck);
-  }
-}
-
-var button_template = '<div class="button-group dynamically-inserted"><a href="#" class="minibutton selected" data-show="all">All</a><a href="#" class="minibutton" data-show="issues"><span class="type-icon octicon octicon-issue-opened"></span></a><a href="#" class="minibutton" data-show="prs"><span class="type-icon octicon octicon-git-pull-request"></span></a></div>';
