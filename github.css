@@ -2,6 +2,10 @@
   margin-right: 0;
 }
 
+.wrapper .site {
+  padding: 0 64px;
+}
+
 .wrapper .container {
   width: auto;
   box-sizing: border-box;
@@ -10,7 +14,7 @@
 .wrapper .container .repository-sidebar {
   padding-right: 10px;
   position: absolute;
-  right: 0;
+  right: 55px;
 }
 
 .wrapper .container .repository-content {
