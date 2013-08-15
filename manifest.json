@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "GitHub+",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Make GitHub a bit better to use",
   "icons": {
     "16": "images/icon.png",
@@ -10,7 +10,8 @@
   },
   "homepage_url": "https://github.com/mckenna/GitHubPlus",
   "permissions": [
-    "https://github.com/*"
+    "https://github.com/*",
+    "storage"
   ],
   "content_scripts": [
     {
