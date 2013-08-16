@@ -35,6 +35,26 @@
   margin-right: 179px;
 }
 
+.wrapper .container .repository-content #new_issue {
+  padding-right: 240px;
+  position: relative;
+}
+
+.wrapper .container .repository-content #new_issue .column.main .discussion-topic {
+  float: none;
+  width: 100%;
+}
+
+.wrapper .container .repository-content #new_issue .column.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.wrapper .container .repository-content #new_issue .discussion-topic {
+  margin-right: 0;
+}
+
 .wrapper .container .repository-content .composer-meta {
   position: absolute;
   top: 0;
