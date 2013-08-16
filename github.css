@@ -29,6 +29,19 @@
   margin-right: 50px;
 }
 
+.wrapper .container .repository-content .discussion-topic {
+  float: none;
+  width: auto;
+  margin-right: 179px;
+}
+
+.wrapper .container .repository-content .composer-meta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .wrapper .container .repo-container.with-full-navigation .repository-content {
   width: auto;
   margin-right: 185px;
