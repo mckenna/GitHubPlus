@@ -35,6 +35,10 @@
   margin-right: 179px;
 }
 
+.wrapper .container .repository-content .view-pull-request .discussion-topic {
+  margin-right: 0;
+}
+
 .wrapper .container .repository-content #new_issue {
   padding-right: 240px;
   position: relative;
@@ -51,6 +55,7 @@
   right: 0;
 }
 
+.wrapper .container .repository-content #show_issue .discussion-topic,
 .wrapper .container .repository-content #new_issue .discussion-topic {
   margin-right: 0;
 }
