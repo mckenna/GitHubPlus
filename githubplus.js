@@ -20,7 +20,7 @@ $(function() {
   }
 
   // Remove whitespace from GitDiffs automatically
-  $('[data-container-id="files_bucket"]').attr('href', function(i,href) { return href + '?w=0'; });
+  //$('[data-container-id="files_bucket"]').attr('href', function(i,href) { return href + '?w=0'; });
 
   // Make the auto inserted buttons work
   $(document).on(
