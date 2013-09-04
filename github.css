@@ -100,6 +100,21 @@
   padding-left: 21px;
 }
 
+.wrapper .container .settings-content {
+  float: none !important;
+  width: auto;
+  margin-left: 240px;
+}
+
+.wrapper .container .settings-content.page-billing {
+  margin-left: 0;
+}
+
+.wrapper .container .settings-content li.clearfix:after,
+.wrapper .container .settings-content hr.bleed-flush {
+  clear: none !important;
+}
+
 @media screen and (max-width: 1094px) {
   .wrapper .container .repository-sidebar {
     display: none;
